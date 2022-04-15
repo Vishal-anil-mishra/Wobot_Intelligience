@@ -11,7 +11,7 @@ app.use(express.static(path.resolve(__dirname,'csv')));
 app.use(bodyParser.urlencoded({extended:false}));  
 app.use(express.json());
 
-//just changing
+
 app.use("/api/user",authrouter);
 app.use("/api/product",verifymiddleware,productrouter);
 
